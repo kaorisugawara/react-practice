@@ -16,19 +16,14 @@
 
 import React from "react";
 import { render } from "react-dom";
+import App from "../src/app";
 
-import { createStore } from "redux";
+render(
+    <App />, document.getElementById("content")
+);
 
-import { Provider } from "react-redux";
-
-import rootReducer from "../proto/reducers";
-
-import Header from "../proto/component/header/header";
-import Footer from "../proto/component/footer/footer";
-import CalculatorContainer from "../proto/container/CalculatorContainer"
-
-const store = createStore(rootReducer);
-
-render(<Provider store={store}><Header /></Provider>, document.getElementById("header"));
-render(<Provider store={store}><Footer /></Provider>, document.getElementById("footer"));
-render(<Provider store={store}><CalculatorContainer /></Provider>, document.getElementById("content"));
+// render(
+//     <Provider store={store}><Header /></Provider>, document.getElementById("header")
+// );
+// render(<Provider store={store}><Footer /></Provider>, document.getElementById("footer"));
+// render(<Provider store={store}><CalculatorContainer /></Provider>, document.getElementById("content"));

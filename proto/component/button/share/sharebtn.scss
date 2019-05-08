@@ -1,0 +1,13 @@
+.shareBtn {
+    border: none;
+    &:hover {
+        cursor: pointer;
+        color: cyan;
+    }
+    &:focus {
+        color: cyan;
+    }
+}
+.copyBtn {
+    width: -webkit-fill-available;
+}
