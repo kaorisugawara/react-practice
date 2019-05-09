@@ -10,15 +10,15 @@ class AlertDialog extends React.Component {
     state = {
       open: false,
     };
-  
+
     handleClickOpen = () => {
       this.setState({ open: true });
     };
-  
+
     handleClose = () => {
       this.setState({ open: false });
     };
-  
+
     render() {
       return (
         <div>
@@ -50,5 +50,5 @@ class AlertDialog extends React.Component {
       );
     }
   }
-  
+
   export default AlertDialog;

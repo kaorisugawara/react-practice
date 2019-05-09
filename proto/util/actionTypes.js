@@ -9,4 +9,9 @@ export const SHARE = 'SHARE';
 export const TWITTER = 'TWITTER';
 export const FACEBOOK = 'FACEBOOK';
 export const COPYURL = 'COPYURL';
-export const DIALOG_CLOSE = 'DIALOG_CLOSE'
+export const DIALOG_CLOSE = 'DIALOG_CLOSE';
+
+//myjsonからデータ取得する
+export const USER_FETCH_REQUESTED = 'USER_FETCH_REQUESTED';
+export const USER_FETCH_SUCCEEDED = 'USER_FETCH_SUCCEEDED';
+export const USER_FETCH_FAILED = 'USER_FETCH_FAILED';

@@ -1,11 +1,16 @@
 import React from "react";
-import { createStore } from "redux";
+import { createStore, applyMiddleware } from "redux";
+import createSagaMiddleware from 'redux-saga'
 import { Link } from "react-router-dom";
 import { Provider } from "react-redux";
 import rootReducer from "../../reducers";
+import rootSaga from "../../sagaEffects";
 import ShareContainer from "../../container/ShareContainer/ShareContainer";
 
-const store = createStore(rootReducer);
+const sagaMiddleware = createSagaMiddleware();
+const store = createStore(rootReducer, applyMiddleware(sagaMiddleware));
+
+sagaMiddleware.run(rootSaga);
 
 const Header = () => {
     return (

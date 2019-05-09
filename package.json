@@ -12,6 +12,7 @@
   "dependencies": {
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
+    "axios": "^0.18.0",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.3.1",
     "dotenv": "^7.0.0",
@@ -36,12 +37,14 @@
     "redux-actions": "^2.6.5",
     "redux-logger": "^3.0.6",
     "redux-promise": "^0.6.0",
+    "redux-saga": "^1.0.2",
     "sass": "^1.19.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
     "babel-core": "^6.26.3",

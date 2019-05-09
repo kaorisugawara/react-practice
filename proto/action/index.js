@@ -37,3 +37,9 @@ export const onCopyURL = () => ({
 export const onShareDialogClose = () => ({
     type: actionTypes.DIALOG_CLOSE
 })
+
+//myjsonからのデータ取得
+export const onUserFetchRequest = (page) => ({
+    type: actionTypes.USER_FETCH_REQUESTED,
+    payload: {page: page}
+})

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
